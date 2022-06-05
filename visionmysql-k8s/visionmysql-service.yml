@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: visionmysql
+  namespace: default
+  labels:
+    app: visionmysql
+spec:
+  selector:
+    app: visionmysql
+  type: LoadBalancer
+  ports:
+    - name: http
+      port: 80
+      targetPort: 8080

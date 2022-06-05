@@ -1,0 +1,12 @@
+commonLabels:
+  app.kubernetes.io/genereted-by: JHipster
+
+resources:
+  # Individual apps
+  - visionmysql-k8s/visionmysql-deployment.yml
+  - visionmysql-k8s/visionmysql-service.yml
+  - visionmysql-k8s/visionmysql-mysql.yml
+  - visionmysql-k8s/jwt-secret.yml
+# service discovery eureka/consul
+
+patchesJson6902:
